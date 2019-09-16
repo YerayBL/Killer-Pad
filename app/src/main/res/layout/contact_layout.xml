@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/redLeft"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:onClick="redMinus1"
+        android:text="-1"
+        app:layout_constraintEnd_toStartOf="@+id/colorRed"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/redLeft2"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:onClick="redMinus10"
+        android:text="-10"
+        app:layout_constraintEnd_toStartOf="@+id/redLeft"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/greenLeft"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:onClick="greenMinus1"
+        android:text="-1"
+        app:layout_constraintEnd_toStartOf="@+id/colorGreen"
+        app:layout_constraintTop_toBottomOf="@+id/redLeft" />
+
+    <Button
+        android:id="@+id/greenLeft2"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:onClick="greenMinus10"
+        android:text="-10"
+        app:layout_constraintEnd_toStartOf="@+id/greenLeft"
+        app:layout_constraintTop_toBottomOf="@+id/redLeft2" />
+
+    <Button
+        android:id="@+id/blueLeft"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:onClick="blueMinus1"
+        android:text="-1"
+        app:layout_constraintEnd_toStartOf="@+id/colorBlue"
+        app:layout_constraintTop_toBottomOf="@+id/greenLeft" />
+
+    <Button
+        android:id="@+id/blueLeft2"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:onClick="blueMinus10"
+        android:text="-10"
+        app:layout_constraintEnd_toStartOf="@+id/blueLeft"
+        app:layout_constraintTop_toBottomOf="@+id/greenLeft2" />
+
+    <TextView
+        android:id="@+id/colorRed"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:text="Color"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toStartOf="@+id/redRight"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/colorGreen"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="Color"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toStartOf="@+id/greenRight"
+        app:layout_constraintTop_toBottomOf="@+id/colorRed" />
+
+    <TextView
+        android:id="@+id/colorBlue"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="Color"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toStartOf="@+id/blueRight"
+        app:layout_constraintTop_toBottomOf="@+id/colorGreen" />
+
+    <Button
+        android:id="@+id/redRight"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:onClick="redPlus1"
+        android:text="+1"
+        app:layout_constraintEnd_toStartOf="@+id/redRight2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/redRight2"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:onClick="redPlus10"
+        android:text="+10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/greenRight"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:onClick="greenPlus1"
+        android:text="+1"
+        app:layout_constraintEnd_toStartOf="@+id/greenRight2"
+        app:layout_constraintTop_toBottomOf="@+id/redRight" />
+
+    <Button
+        android:id="@+id/greenRight2"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="16dp"
+        android:onClick="greenPlus10"
+        android:text="+10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/redRight2" />
+
+    <Button
+        android:id="@+id/blueRight"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:onClick="bluePlus1"
+        android:text="+1"
+        app:layout_constraintEnd_toStartOf="@+id/blueRight2"
+        app:layout_constraintTop_toBottomOf="@+id/greenRight" />
+
+    <Button
+        android:id="@+id/blueRight2"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="16dp"
+        android:onClick="bluePlus10"
+        android:text="+10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/greenRight2" />
+
+    <EditText
+        android:id="@+id/editTextIp"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="IP"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextPort"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Puerto"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextIp" />
+
+    <EditText
+        android:id="@+id/editTextName"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Nombre"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextPort" />
+
+    <Button
+        android:id="@+id/connectButton"
+        android:layout_width="250dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="16dp"
+        android:onClick="connect"
+        android:text="Conect"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <RelativeLayout
+        android:id="@+id/canvasLayout"
+        android:layout_width="350dp"
+        android:layout_height="100dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"></RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>
